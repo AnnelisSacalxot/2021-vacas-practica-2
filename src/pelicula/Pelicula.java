@@ -6,18 +6,18 @@ public class Pelicula {
     private int idPelicula;
     private String nombrePelicula;
     private int año;
-    private String categoria;
+    private String categoriaPelicula;
     private boolean estado;
 
     //Creando constructor
 
-    public Pelicula(int idPelicula, String nombrePelicula, int año, String categoria, boolean estado){
+    public Pelicula(int idPelicula, String nombrePelicula, int año, String categoriaPelicula, boolean estado){
         this.idPelicula = idPelicula;
         this.nombrePelicula = nombrePelicula;
         this.año = año;
     }
 
-    public Pelicula(){
+    public Pelicula(int contadorPelicula, int idPelicula2, String nombrePelicula2, int año2, String categoria2, boolean estado2){
     
     }
 
@@ -48,11 +48,11 @@ public class Pelicula {
     }
 
     public String getCategoria(){
-        return categoria;
+        return categoriaPelicula;
     }
 
-    public void setCategoria(String categoria){
-        this.categoria = categoria;
+    public void setCategoria(String categoriaPelicula){
+        this.categoriaPelicula = categoriaPelicula;
     }
 
     public boolean getEstado(){
@@ -65,7 +65,7 @@ public class Pelicula {
 
     public String getInformacion() {
         String resultado = "Id pelicula: " + idPelicula + " Nombre de la pelicula: " + nombrePelicula +
-        "Año: "+año + "Categoría: "+categoria + "Estado: "+ estado;
+        "Año: "+año + "Categoría: "+categoriaPelicula + "Estado: "+ estado;
         return resultado;
     }
 

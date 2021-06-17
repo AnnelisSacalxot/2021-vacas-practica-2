@@ -1,7 +1,8 @@
 package src.tienda;
 
-import jdk.tools.jlink.internal.SymLinkResourcePoolEntry;
 import src.clientes.VectorClientes;
+import src.pelicula.VectorPelicula;
+import src.pelicula.*;
 
 public class Principal {
 
@@ -10,6 +11,7 @@ public class Principal {
     }
 
     private VectorClientes tablaClientes = new VectorClientes();
+    private VectorPelicula tablaPelicula = new VectorPelicula();
 
     public Principal(){
 
@@ -53,7 +55,7 @@ public class Principal {
                 tablaClientes.mostrarClientes();
             }
             if (menu == 5) {
-                
+                tablaClientes.agregarPelicula();
             }
 
             if (menu == 6) {
