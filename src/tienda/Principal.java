@@ -60,6 +60,9 @@ public class Principal {
             }
 
             if (menu == 6) {
+
+                //Mostrar las películas registradas en la Opcion 5
+                tablaPelicula.mostrarPeliculas();
                 
             }
 

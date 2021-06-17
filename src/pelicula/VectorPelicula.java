@@ -60,11 +60,8 @@ public class VectorPelicula {
 
     public void mostrarPeliculas(){
 
-        System.out.println("\n\n Peliculas de memorabilia");
-        for (int i = 0; i < (contadorPelicula-1); i++) {
-           // System.out.println("-"+i+") "+peliculas[i].getInformacion());
-            //System.out.println("-"+i+") "+clientes[i].getId() + " nombre "+clientes[i].getNombre()+ " telefono "+clientes[i].getTelefono());
-            
+        for (int j = 0; j < contadorPelicula; j++) {
+           agregarPelicula();
         }
     }
 
