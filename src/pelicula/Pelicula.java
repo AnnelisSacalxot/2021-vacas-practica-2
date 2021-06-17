@@ -63,10 +63,10 @@ public class Pelicula {
         this.estado = estado;
     }
 
-    public String getInformacion() {
-        String resultado = "Id pelicula: " + idPelicula + " Nombre de la pelicula: " + nombrePelicula +
+    public String getInformacionPelicula() {
+        String resultadoPelicula = "Id pelicula: " + idPelicula + " Nombre de la pelicula: " + nombrePelicula +
         "Año: "+año + "Categoría: "+categoriaPelicula + "Estado: "+ estado;
-        return resultado;
+        return resultadoPelicula;
     }
 
 }
