@@ -55,7 +55,8 @@ public class Principal {
                 tablaClientes.mostrarClientes();
             }
             if (menu == 5) {
-                tablaClientes.agregarPelicula();
+                //Opción para agregar peliculas nuevas
+                tablaPelicula.agregarPelicula();
             }
 
             if (menu == 6) {

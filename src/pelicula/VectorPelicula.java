@@ -21,7 +21,7 @@ public class VectorPelicula {
 
     public void agregarPelicula(int idPelicula, String nombrePelicula, int año, String categoriaPelicula){
 
-        System.out.println("\nIngrese la cantidad de películas para añadir");
+        /*System.out.println("\nIngrese la cantidad de películas para añadir");
         contadorPelicula= leer.nextInt();
         leer.nextLine();
 
@@ -37,16 +37,24 @@ public class VectorPelicula {
             leer.nextLine();
             System.out.println("Categoría, ejemplo: terror, fantasía, otros):");
             categoriaPelicula = leer.nextLine();
-        }
+        }*/
     }
 
     public void agregarPelicula(){
-        int idPelicula = IngresoDatos.getEntero("", false);
-        String nombrePelicula = IngresoDatos.getTexto("Ingrese el nombre del cliente");
-        int año = IngresoDatos.getEntero("Ingrese el número de telefono", false);
-        String categoriaPelicula = IngresoDatos.getTexto("");
+
+        System.out.println("\nIngrese la cantidad de películas para añadir");
+        contadorPelicula= leer.nextInt();
+        leer.nextLine();
+
+        for (int i = 0; i < contadorPelicula; i++) {
+        System.out.println("\n« « « Película "+(i+1) +"» » »");
+        int idPelicula = IngresoDatos.getEntero("Ingrese el ID de la pelicula", false);
+        String nombrePelicula = IngresoDatos.getTexto("Ingrese el nombre de la película");
+        int año = IngresoDatos.getEntero("Ingrese el año de publicación de la pelicula", false);
+        String categoriaPelicula = IngresoDatos.getTexto("Ingrese la categoría (Fantasia, Terror, entre otros...)");
         agregarPelicula(idPelicula, nombrePelicula, año, categoriaPelicula);
     }
+}
 
     //Mostramos los datos recibidos
 
