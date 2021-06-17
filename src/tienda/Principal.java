@@ -1,5 +1,6 @@
 package src.tienda;
 
+import jdk.tools.jlink.internal.SymLinkResourcePoolEntry;
 import src.clientes.VectorClientes;
 
 public class Principal {
@@ -20,6 +21,9 @@ public class Principal {
             System.out.println("2) Mostrar clientes");
             System.out.println("3) Ordenar Clientes Ascente");
             System.out.println("4) Ordenar Clientes Descendente");
+            System.out.println("5) Ingreso de peliculas");
+            System.out.println("6) Mostrar peliculas");
+            System.out.println("7) Ordenar peliculas de manera ascendente");
             System.out.println("-1) Salir");
             System.out.println("\n");
             menu = IngresoDatos.getEntero("Ingrese la opción ", true);
@@ -47,6 +51,17 @@ public class Principal {
                 System.out.println("\n\nOrdenado:");
                 tablaClientes.ordenarPorNombre(false);
                 tablaClientes.mostrarClientes();
+            }
+            if (menu == 5) {
+                
+            }
+
+            if (menu == 6) {
+                
+            }
+
+            if (menu == 7) {
+                
             }
 
         }
